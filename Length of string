@@ -1,0 +1,26 @@
+//Find length of a string 
+
+#include<iostream>
+#include<string.h>
+using namespace std;
+
+int strlen1(char* s){
+    int count=0;
+    while(*s!='\0'){
+        count++;
+        s++;
+    }
+    return count;
+}
+int main(){
+    char s[20];
+    cout<<"Enter string";
+    cin.getline(s,20);
+
+    cout<<"Length"<<strlen(s)<<endl;
+    int count =strlen1(s);
+    cout<<"Length of string is:"<<count;
+
+    
+
+}
